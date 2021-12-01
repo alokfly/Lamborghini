@@ -10,7 +10,7 @@ const {
   updateUserDetail,
   updatePasswordValidations,
   updatePassword,
-} = require("../controllers/userController");
+} = require("../controllers/UserController");
 router.post("/register", registerValiations, register);
 router.post("/login", loginValiations, login);
 
