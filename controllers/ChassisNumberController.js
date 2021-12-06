@@ -37,7 +37,7 @@ module.exports.updategetChassisNumber = async (req, res) => {
       const updateChassisNumber = await ChassisNumber.findByIdAndUpdate(
         { _id: ObjectId(req.params.id) },
         {
-          brandName,
+          number,
         }
       );
       res.status(200).json({
