@@ -9,6 +9,7 @@ const brandRouter = require("./routes/brandRoutes");
 const seriesRouter = require("./routes/seriesRoutes");
 const chassisNumberRouter = require("./routes/chassisNumberRoutes");
 const modelRouter = require("./routes/modelRoutes");
+const blogRouter = require("./routes/blogRoutes");
 
 require("dotenv").config();
 const app = express();
@@ -37,6 +38,7 @@ app.use("/", brandRouter);
 app.use("/", seriesRouter);
 app.use("/", chassisNumberRouter);
 app.use("/", modelRouter);
+app.use("/", blogRouter);
 
 const PORT = process.env.PORT || 5000;
 
