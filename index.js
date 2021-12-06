@@ -6,6 +6,7 @@ const cors = require("cors");
 const userRouter = require("./routes/userRoutes");
 const pageRouter = require("./routes/pageRoutes");
 const brandRouter = require("./routes/brandRoutes");
+const seriesRouter = require("./routes/seriesRoutes");
 
 require("dotenv").config();
 const app = express();
@@ -31,6 +32,7 @@ app.use(bodyParser.json());
 app.use("/", userRouter);
 app.use("/", pageRouter);
 app.use("/", brandRouter);
+app.use("/", seriesRouter);
 
 const PORT = process.env.PORT || 5000;
 
